@@ -7,10 +7,10 @@ function Layaout() {
   return (
     <>
       <Header />
-      <main className="container mx-auto px-0 sm:px-10">
+      <main className="container mx-auto px-10">
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

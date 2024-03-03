@@ -3,7 +3,7 @@ import { TbLetterGSmall } from "react-icons/tb";
 function Header() {
   return (
     <header>
-      <h1 className="text-xl px-28 py-8 flex items-center">
+      <h1 className="text-xl px-10 sm:px-28 py-8 flex items-center">
         <span>
           <TbLetterGSmall className="text-7xl" />
         </span>
