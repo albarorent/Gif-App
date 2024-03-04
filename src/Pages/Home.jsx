@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import AddCategory from "../Components/AddCategory";
-import GifGrid from "../Components/GifGrid";
+import { useState } from "react";
+import { AddCategory, GifGrid } from "../Components";
 
 export default function Home() {
   const [categories, setCategories] = useState([]);
@@ -10,10 +9,6 @@ export default function Home() {
 
     setCategories([newCategory, ...categories]);
   };
-
-  const onDeleteCategory = () =>{
-    
-  }
 
   return (
     <>
@@ -26,7 +21,7 @@ export default function Home() {
       </div>
       <div>
         {categories.map((category) => (
-          <GifGrid  key={category} category={category} />
+          <GifGrid key={category} category={category} setCategories={setCategories} categories={categories} />
         ))}
       </div>
     </>
